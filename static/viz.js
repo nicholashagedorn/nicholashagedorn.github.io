@@ -31,8 +31,8 @@ function setPattern() {
 function setup() {
     let cvas = createCanvas(w, h);
     cvas.parent("canvas-container");
-    fill("#084764");
-    stroke("#001322");
+    fill("#000000");
+    stroke("#575757");
     windowResized();
 }
 
