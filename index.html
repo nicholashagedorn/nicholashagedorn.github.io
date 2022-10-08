@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="static/style.css">
+        <link rel="icon" href="assets/logo-alt.png">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js" defer async></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Hi! I'm Jieruei. I enjoy competitive programming, web development and making things with computer vision and machine learning.">
+        <title>Jieruei Chang (@knosmos)</title>
+    </head>
+    <body>
+        <div id=canvas-container></div>
+        <div id="shadow-overlay"></div>
+        <div class="container">
+            <a name="top"></a>
+            <div class="header">
+                <img src="assets/heading-small.png" id="heading-image" alt="Jieruei Chang">
+                <div id="introduction">
+                    <p>Hi! I'm Jieruei. I enjoy competitive programming, web development and making things with computer vision and machine learning.</p>
+                    <br>
+                    <br>
+                    <div class="links">
+                        <a href="#projects">[projects]</a>
+                        <a href="#experience">[experience]</a>
+                        <a href="#achievements">[achievements]</a>
+                        <a href="assets/resume.pdf">[resume]</a>
+                        <a href="#contact">[contact]</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content">
+                <div id="projects">
+                    <a name="projects"></a>
+                    <h1>Projects</h1>
+                    <p>I'm always working on something new. Here are some of the things I've made.</p>
+                    <a href="https://github.com/knosmos" target="_blank">[View all projects]</a><br><br>
+                    <panel-list id="projects-grid" v-bind:panels="projects"></panel-list>
+                </div>
+                <div id="experience">
+                    <a name="experience"></a>
+                    <h1>Experience</h1>
+                    <panel-list id="experience-grid" v-bind:panels="items"></panel-list>
+                </div>
+                <div id="achievements">
+                    <a name="achievements"></a>
+                    <h1>Achievements</h1>
+                    <panel-list id="achievements-grid" v-bind:panels="items"></panel-list>
+                </div>
+                <div id="contact">
+                    <a name="contact"></a>
+                    <h1>Contact</h1>
+                    <div id="contact-content" class="links">
+                        <a href="mailto:jierueic@gmail.com" target="_blank">[email]</a>
+                        <a href="https://github.com/knosmos?tab=repositories" target="_blank">[github]</a>
+                        <!--<a target="_blank">[linkedin]</a>-->
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <div class="footer" id="footer">
+                <a href="#top">⇧ back to top</a>
+                <p>copyright © {{ currentYear }} Jieruei Chang</p>
+                <p>built with <a href="https://vuejs.org/" target="_blank">vue</a> and <a href="https://p5js.org/" target="_blank">p5.js</a></p>
+                <br>
+            </div>
+        </div>
+        <script src="static/panels.js"></script>
+        <script src="static/patterns.js"></script>
+        <script src="static/viz.js"></script>
+        <script src="static/konami.js"></script>
+    </body>
+</html>
