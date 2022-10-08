@@ -13,70 +13,6 @@ Vue.component('panel-list', {
     </div>`
 });
 
-let app1 = new Vue(
-{
-    el: '#projects-grid',
-    data:
-    {
-        projects: [
-            {
-                name: "USACO",
-                description: "Solutions and explanations for competitive programming problems",
-                link: "knosmos.github.io/usaco",
-                image: "usaco.png"
-            },
-            {
-                name: "Robowordle",
-                description: "Using computer vision and a 3D printer to play a phone-based word game",
-                link: "github.com/knosmos/robowordle",
-                image: "wordle_thumb.png"
-            },
-            {
-                name: "Set-Solve",
-                description: "Playing the card game SET with computer vision",
-                link: "github.com/knosmos/set-solve",
-                image: "setsolve.png"
-            },
-            {
-                name: "SudokuGen",
-                description: "Sudoku puzzle PDF generator",
-                link: "github.com/knosmos/sudoku-gen",
-                image: "sudoku2.png"
-            },
-            {
-                name: "TL;DS",
-                description: "Math solver with OCR and handwriting capability",
-                link: "github.com/knosmos/tlds",
-                image: "tlds.jpg"
-            },
-            {
-                name: "Rhythmvision",
-                description: "Rhythm game with pose estimation",
-                link: "knosmos.github.io/rhythmvision",
-                image: "rhythmvision3.png"
-            },
-            {
-                name: "Scribblebot",
-                description: "contour-detecting autodraw bot",
-                link: "github.com/knosmos/scribblebot",
-                image: "scribblebot.png"
-            },
-            {
-                name: "CMDPXL",
-                description: "Terminal-based image editor",
-                link: "github.com/knosmos/cmdpxl",
-                image: "cmdpxl.png"
-            },
-            {
-                name: "Tres",
-                description: "The classic online multiplayer card game ripoff",
-                link: "knosmos.github.io/tres",
-                image: "tres.png"
-            }
-        ]
-    }
-});
-
 let app2 = new Vue(
 {
     el: '#experience-grid',
@@ -104,7 +40,7 @@ let app2 = new Vue(
             },
             {
                 name: 'PHS Competitive Programming Team',
-                description: "Teaches competitive programming to members and competes in national tournaments. Won 2nd place at Lockheed Martin's CodeQuest competition.",
+                description: "Co-founder. Teaches competitive programming to members and competes in national tournaments. Won 2nd place at Lockheed Martin's CodeQuest competition.",
                 link: 'https://phscpt.github.io/'
             },
             {
@@ -116,6 +52,16 @@ let app2 = new Vue(
                 name: 'Ideas Center',
                 description: "Leader on the Ideas Center Board and volunteer tutor at Princeton High School tutoring center. March 2022 \“Tutor of the Month.\”",
                 link: 'https://www.princetonk12.org/princeton-high-school/students/ideas-center'
+            },
+            {
+                name: 'π & AI',
+                description: "Co-president of π & AI, which runs weekly math and programming circles at local middle school and library. Earned $600 cash funding from America's Promise Alliance.",
+                link: 'https://princetonlibrary.libnet.info/event/7252938'
+            },
+            {
+                name: 'Princeton HR Insight LLC',
+                description: "Head of Marketing for Princeton HR Insight LLC. Create marketing videos viewed by thousands of customers and potential customers.",
+                link: 'https://www.princetonhrinsight.com/'
             }
         ]
     }
@@ -127,19 +73,19 @@ let achievements = new Vue({
         items: [
             {
                 name: "Competitive Programming",
-                description: "Achieved Gold ranking in USA Computing Olympiad<br>Won 2nd place at Lockheed Martin CodeQuest competition",
+                description: "2nd place at Lockheed Martin\'s CodeQuest<br>2nd place at University of Philidelphia\'s Philidelphia Classic",
             },
             {
                 name: "Hackathons",
-                description: "HackPHS 2021: 1st Overall, Best Hardware Hack",
+                description: "1st place at hackPHS 2021<br>Best in Data Visualization at PantherHack 2021",
             },
             {
-                name: "Mathematics Competitions",
-                description: "PUMaC 2021: 1st (Team), Top 10 (Number Theory)<br><br>Qualified for AIME in 2021",
+                name: "Writing",
+                description: "Finalist of the “Imagination Begins with You…” 12th Annual High School Writing Contest. Published in the 2022 “One Spark” short story collection. Over 350 competitors from 40 states",
             },
             {
-                name: "Violin",
-                description: "Winner of Achievement (2022), Scholarship (2017) and Concerto (2019) competitions at Westminster Conservatory",
+                name: "Mathematics",
+                description: "Accepted to Program in Algebraic and Combinatorial Thinking",
             }
         ]
     }
