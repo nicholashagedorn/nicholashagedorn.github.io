@@ -84,33 +84,38 @@ let app2 = new Vue(
     {
         items: [
             {
-                name: 'PHS Algorithms Club',
-                description: "Teach competitive programming to 15 members weekly and compete in national tournaments",
+                name: 'Absolute Value',
+                description: "Vice President of international 501(c)(3) that hosts middle-school math competitions in over 20 chapters across 5 countries and 12 states.",
+                link: 'https://absval.org/'
             },
             {
-                name: 'Princeton Soccer Robotics',
-                description: "Integrate complex hardware and software, design intelligent robot sensor and movement algorithms",
-                link: 'soccer-robotics.github.io/'
+                name: 'Knot Theory Research',
+                description: "Abstract: In knot theory, a standard crossing in a knot diagram is where one strand passes over another. In 2012, Adams introduced $n$-crossing projections, which are knot diagrams where each crossing consists of $n$ intersecting strands. The $n$-crossing number of a knot $K$, denoted by $c_n(K)$, is defined as the smallest number of crossings a $n$-crossing projection of $K$ can contain. Inequalities between the $2$-, $3$-, $4$-, and $5$-crossing numbers have been previously established. We prove $c_9(K)\leq c_3(K)-2$ for all knots $K$ that are not the trivial, trefoil, or figure-eight knot. We then generalize this result to prove that $c_{13}(K) < c_{5}(K)$ for a certain set of classes of $5$-crossing knots. Finally, we examine the remaining classes of $5$-crossing knots for possible counter-examples.",
             },
             {
-                name: 'PHS Math Team',
-                description: "Solve challenging problems in individual and team settings and participate in national competitions including MMATHS, AMC, CMIMC and PUMaC",
+                name: 'Princeton Speech & Debate',
+                description: "Competes on Princeton's Varsity Public Forum debate team. 3rd place at New Jersey’s 2022 State Championships.",
                 link: 'sites.google.com/view/phsmathteam/home'
             },
             {
-                name: 'Program in Algebraic and Combinatorial Thinking',
-                description: "Selected for PACT, a series of courses in theoretical computer science; mentored other students on problem sets.",
-                link: 'algorithmicthinking.org/'
+                name: 'Ross Mathematics Program',
+                description: "Selected as a Junior Counselor at the Ross Mathematics Program, the oldest summer math program for high-schoolers in the US. Self-explored number theory and ramsey theory, graded participant sets, and lead problem review sessions.",
+                link: 'https://rossprogram.org/'
             },
             {
-                name: 'Maker Faire',
-                description: "Demoed electronics projects at Maker Faire New York in <a href='https://makerfaire.com/maker/entry/63428/' style='display:inline-block;font-size:14pt'>2017</a> and <a href='https://makerfaire.com/maker/entry/67542/' style='display:inline-block;font-size:14pt'>2018</a>",
-                link: 'makerfaire.com'
+                name: 'PHS Competitive Programming Team',
+                description: "Teaches competitive programming to members and competes in national tournaments. Won 2nd place at Lockheed Martin's CodeQuest competition.",
+                link: 'https://phscpt.github.io/'
             },
             {
-                name: 'Kickside Martial Arts',
-                description: "Taught classes in martial arts while emphasizing the importance of discipline and self-control; reached rank of 2nd Dan Black Belt",
-                link: 'kicksidema.com/'
+                name: 'NJ Governor\'s STEM Scholars Program',
+                description: "Selected as the one of the top 100 STEM students in New Jersey. Currently completing a year-long research project in the program.",
+                link: 'https://www.govstemscholars.com/'
+            },
+            {
+                name: 'Ideas Center',
+                description: "Leader on the Ideas Center Board and volunteer tutor at Princeton High School tutoring center. March 2022 \“Tutor of the Month.\”",
+                link: 'https://www.princetonk12.org/princeton-high-school/students/ideas-center'
             }
         ]
     }
