@@ -16,19 +16,21 @@
         <div class="container">
             <a name="top"></a>
             <div class="header">
-                <img src="assets/heading-small.png" id="heading-image" alt="Nicholas Hagedorn">
+                <img src="assets/Logoleftdown.png" id="heading-image" alt="Nicholas Hagedorn">
                 <div id="introduction">
                     <h2 style="color:#fff">I'm a <span class="typing" style="color:#12D640"></span></h2>
+
+                    <nav class="nav-menu d-none d-lg-block">
+                        <ul>
+                          <li><a href="#experience"> <span>Experience</span></a></li>
+                          <li><a href="#achievements"> <span>Achievements</span></a></li>
+                          <li><a href="#contact"> <span>Contact</span></a></li>
+                          <li><a href="#assets/resume.pdf"> <span>Resume</span></a></li>
+                        </ul>
+                    </nav>
+
                     <p>Nicholas is a junior at Princeton High School. His primary focus is pure mathematics, where he often spends hours
                         trying to solve problems. Sometimes his solutions work.</p>
-                    <br>
-                    <br>
-                    <div class="links">
-                        <a href="#experience">[experience]</a>
-                        <a href="#achievements">[achievements]</a>
-                        <a href="assets/resume.pdf">[resume]</a>
-                        <a href="#contact">[contact]</a>
-                    </div>
                 </div>
             </div>
             <div class="main-content">
@@ -64,15 +66,18 @@
         <script src="static/patterns.js"></script>
         <script src="static/viz.js"></script>
         <script src="static/konami.js"></script>
-    </body>
 
-    <script type="text/javascript">
-        var typed = new Typed('.typing', {
-          strings: ["Mathematician", "Student", "Programmer", "Musician", "Friend"],
-          loop: true,
-          typeSpeed: 65,
-          backSpeed: 65
-        });
-      </script>
+        <script src="assets/vendor/typed.js/typed.min.js"></script>
+
+        <script type="text/javascript">
+            var typed = new Typed('.typing', {
+              strings: ["Mathematician", "Student", "Programmer", "Classical Pianist", "Researcher"],
+              loop: true,
+              typeSpeed: 90,
+              backSpeed: 65
+            });
+        </script>
+
+    </body>
 
 </html>
