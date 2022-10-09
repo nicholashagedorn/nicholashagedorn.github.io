@@ -1,7 +1,7 @@
 let w = window.innerWidth * 0.97;
 let h = window.innerHeight;
 
-let gridCntW = w > 800 ? 120:100;
+let gridCntW = w > 800 ? 120:80;
 
 let gridSize = Math.round(w/gridCntW);
 let gridCntH = Math.round(h/gridSize);
@@ -15,7 +15,7 @@ function makeGrid() {
 }
 let grid;
 
-let pattern = bi;
+let pattern = pd44MWSSgun;
 
 let patternX = 40;
 let patternY = 20;
@@ -39,6 +39,7 @@ function setup() {
 function draw() {
     //background("#0e0118");
     clear();
+    translate(0, -50);
 
     // draw
     for (let y = 3; y<gridCntH-3; y++) {
@@ -76,8 +77,9 @@ function draw() {
             }
         }
     }
+    
     grid = newGrid;
-    frameRate(30);
+    frameRate(15);
 }
 
 function windowResized() {
@@ -91,11 +93,11 @@ function windowResized() {
     grid = makeGrid();
     
     if (w > 1000) {
-        pattern = bi;
+        pattern = pd44MWSSgun;
         patternX = 40;
     }
     else {
-        pattern = gosper;
+        pattern = pd44MWSSgun;
         patternX = 10;
     }
     setPattern();
