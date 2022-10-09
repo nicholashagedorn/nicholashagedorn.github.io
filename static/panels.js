@@ -91,6 +91,7 @@ let achievements = new Vue({
     }
 });
 
+
 let footer = new Vue({
     el: '#footer',
     data:
