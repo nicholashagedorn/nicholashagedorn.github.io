@@ -134,6 +134,11 @@ html, body {
 p {
     font-size: 16pt;
 }
+
+#credits {
+    float: right
+}
+
 a {
     color: var(--accent);
     text-decoration: none;
