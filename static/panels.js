@@ -4,7 +4,7 @@ Vue.component('panel-list', {
     <div class="card-grid">
         <div class="card" v-for="panel in panels">
             <div class="card-img" v-if="panel.image" v-bind:style="'background-image:url(img/' + panel.image + ')'"></div>
-            <div class="card-body">
+            <div class="card-body" data-aos="zoom-out-down" data-aos-anchor-placement="bottom-bottom">
                 <a v-bind:href="'https://'+panel.link" target="_blank" v-if="panel.link">{{ panel.name }}</a>
                 <a v-if="!panel.link">{{ panel.name }}</a>
                 <p v-html = "panel.description"></p>

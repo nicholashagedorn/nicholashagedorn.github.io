@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" href="static/style.css">
         <link rel="icon" href="assets/logo-alt.png">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js" defer async></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,17 +37,17 @@
             <div class="main-content">
                 <div id="experience">
                     <a name="experience"></a>
-                    <h1>Experience</h1>
-                    <panel-list id="experience-grid" v-bind:panels="items"></panel-list>
+                    <div data-aos="fade-right"><h1>Experience</h1></div>
+                    <div><panel-list id="experience-grid" v-bind:panels="items"></panel-list></div>
                 </div>
                 <div id="achievements">
                     <a name="achievements"></a>
-                    <h1>Achievements</h1>
+                    <div data-aos="zoom-out-right"><h1>Achievements</h1></div>
                     <panel-list id="achievements-grid" v-bind:panels="items"></panel-list>
                 </div>
                 <div id="contact">
                     <a name="contact"></a>
-                    <h1>Contact</h1>
+                    <div data-aos="zoom-out-right"><h1>Contact</h1></div>
                     <nav class="nav-menu d-none d-lg-block">
                         <ul>
                             <li><a href="mailto:nicholas.d.hagedorn@gmail.com" target="_blank">Email</a></li>
@@ -80,6 +81,11 @@
               backSpeed: 80,
               startDelay: 200
             });
+        </script>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
         </script>
 
     </body>
