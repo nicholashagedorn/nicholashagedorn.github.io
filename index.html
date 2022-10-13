@@ -24,7 +24,7 @@
                     <nav class="nav-menu d-none d-lg-block">
                         <ul>
                           <li><a href="#experience"> <span>Experience</span></a></li>
-                          <li><a href="#achievements"> <span>Achievements</span></a></li>
+                          <li><a href="#awards"> <span>Awards</span></a></li>
                           <li><a href="#contact"> <span>Contact</span></a></li>
                           <li><a href="assets/resume.pdf"> <span>Resume</span></a></li>
                         </ul>
@@ -40,10 +40,24 @@
                     <div data-aos="fade-right"><h1>Experience</h1></div>
                     <div><panel-list id="experience-grid" v-bind:panels="items"></panel-list></div>
                 </div>
-                <div id="achievements">
-                    <a name="achievements"></a>
-                    <div data-aos="zoom-out-right"><h1>Achievements</h1></div>
-                    <panel-list id="achievements-grid" v-bind:panels="items"></panel-list>
+                <div id="awards">
+                    <a name="awards"></a>
+                    <div data-aos="zoom-out-right"><h1>Awards</h1></div>
+                    
+                    <ul  class="striped-list">
+                        <li><h2>Mathematics</h2></li>
+                        <div id="mathematics-awards">
+                            <div v-for="item in items">
+                                <li class="striped-list">{{ item.name }}: {{item.description}}</li>
+                            </div>
+                        </div>
+                        <li><h2>Programming</h2></li>
+                        <div id="programming-awards">
+                            <div v-for="item in items">
+                                <li>{{ item.name }}: {{item.description}}</li>
+                            </div>
+                        </div>
+                    </ul>
                 </div>
                 <div id="contact">
                     <a name="contact"></a>
@@ -68,8 +82,8 @@
         </div>
         <script src="static/panels.js"></script>
         <script src="static/patterns.js"></script>
+        <script src="static/awards.js"></script>
         <script src="static/viz.js"></script>
-        <script src="static/konami.js"></script>
 
         <script src="assets/vendor/typed.js/typed.min.js"></script>
 

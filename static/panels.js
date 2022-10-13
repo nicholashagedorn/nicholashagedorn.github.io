@@ -4,10 +4,17 @@ Vue.component('panel-list', {
     <div class="card-grid">
         <div class="card" v-for="panel in panels">
             <div class="card-img" v-if="panel.image" v-bind:style="'background-image:url(img/' + panel.image + ')'"></div>
+            <a v-if="panel.link" v-bind:href="panel.link" target="_blank">
             <div class="card-body" data-aos="zoom-out-down" data-aos-anchor-placement="bottom-bottom">
-                <a v-bind:href="'https://'+panel.link" target="_blank" v-if="panel.link">{{ panel.name }}</a>
-                <a v-if="!panel.link">{{ panel.name }}</a>
+                <a>{{ panel.name }}</a>
                 <p v-html = "panel.description"></p>
+            </div>
+            </a>
+            <div v-if="!panel.link">
+            <div class="card-body" data-aos="zoom-out-down" data-aos-anchor-placement="bottom-bottom">
+                <a>{{ panel.name }}</a>
+                <p v-html = "panel.description"></p>
+            </div>
             </div>
         </div>
     </div>`
@@ -22,7 +29,7 @@ let app2 = new Vue(
             {
                 name: 'Absolute Value',
                 description: "Vice President of international 501(c)(3) that hosts middle-school math competitions in over 20 chapters across 5 countries and 12 states.",
-                link: 'absval.org/'
+                link: 'https://absval.org/'
             },
             {
                 name: 'Knot Theory Research',
@@ -31,44 +38,44 @@ let app2 = new Vue(
             {
                 name: 'Princeton Speech & Debate',
                 description: "Competes on Princeton's Varsity Public Forum debate team. 3rd place at New Jersey’s 2022 State Championships.",
-                link: 'phsdbteam.com/'
+                link: 'http://phsdbteam.com/'
             },
             {
                 name: 'Ross Mathematics Program',
                 description: "Selected as a Junior Counselor at the Ross Mathematics Program, the oldest summer math program for high-schoolers in the US. Self-explored number theory and ramsey theory, graded participant sets, and lead problem review sessions.",
-                link: 'rossprogram.org/'
+                link: 'https://rossprogram.org/'
             },
             {
                 name: 'PHS Competitive Programming Team',
                 description: "Co-founder. Teaches competitive programming to members and competes in national tournaments. Won 2nd place at Lockheed Martin's CodeQuest competition.",
-                link: 'phscpt.github.io/'
+                link: 'https://phscpt.github.io/'
             },
             {
                 name: 'NJ Governor\'s STEM Scholars Program',
                 description: "Selected as the one of the top 100 STEM students in New Jersey. Currently completing a year-long research project in the program.",
-                link: 'govstemscholars.com/'
+                link: 'https://govstemscholars.com/'
             },
             {
                 name: 'Ideas Center',
                 description: "Leader on the Ideas Center Board and volunteer tutor at Princeton High School tutoring center. March 2022 \“Tutor of the Month.\”",
-                link: 'princetonk12.org/princeton-high-school/students/ideas-center'
+                link: 'https://princetonk12.org/princeton-high-school/students/ideas-center'
             },
             {
                 name: 'π & AI',
                 description: "Co-president of π & AI, which runs weekly math and programming circles at local middle school and library. Earned $600 cash funding from America's Promise Alliance.",
-                link: 'princetonlibrary.libnet.info/event/7252938'
+                link: 'https://princetonlibrary.libnet.info/event/7252938'
             },
             {
                 name: 'Princeton HR Insight LLC',
                 description: "Head of Marketing for Princeton HR Insight LLC. Create marketing videos viewed by thousands of customers and potential customers.",
-                link: 'princetonhrinsight.com/'
+                link: 'https://princetonhrinsight.com/'
             }
         ]
     }
 });
 
-let achievements = new Vue({
-    el: '#achievements-grid',
+let awards = new Vue({
+    el: '#awards-grid',
     data: {
         items: [
             {
