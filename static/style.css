@@ -179,6 +179,16 @@ h1 {
     transition: all 0.15s;
     color: var(--heading);
 }
+
+h5 {
+    font-family: "Rockwell";
+    font-weight: lighter;
+    font-size: 50pt;
+    transition: all 0.15s;
+    color: var(--heading);
+    margin-bottom: 0cm;
+}
+
 h2 {
     color: var(--accent);
     text-decoration: none;
