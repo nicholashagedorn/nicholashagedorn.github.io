@@ -1,11 +1,12 @@
 html {
-    --background: #000000;
-    --heading: #ffffff;
-    --text: #a6a6a6;
-    --accent: #12d640;
-    --secondary: #1476a4;
+    --background: #ffffff;
+    --heading: #000000;
+    --text: #363636;
+    --accent: #0e8d2c;
+    --special: #ffc107;
+    --secondary: #09384e;
     --fill: #000000;
-    --stroke: #707070;
+    --stroke: #747272;
 }
 
 /* Old: */
@@ -68,13 +69,13 @@ html, body {
 #heading-image {
     width: 100%;
     margin: 0% 0% 20px;
-    filter: drop-shadow(0px 0px 10px var(--secondary));
+    /* filter: drop-shadow(0px 0px 10px var(--secondary)); */
 }
 
-#heading-image:hover {
+/* #heading-image:hover {
     filter: drop-shadow(0px 0px 20px var(--accent));
     transition: filter 0.2s;
-}
+} */
 
 .links {
     display: contents;
@@ -153,7 +154,7 @@ ul.striped-list > li:last-child {
 a {
     color: var(--accent);
     text-decoration: none;
-    text-shadow: 0px 0px 10px var(--secondary);
+    /* text-shadow: 0px 0px 10px var(--secondary); */
     
     cursor: pointer;
     transition: all 0.15s;
@@ -162,7 +163,7 @@ a {
 }
 a:hover {
     color: var(--heading);
-    text-shadow: 0px 0px 20px var(--text);
+    /* text-shadow: 0px 0px 20px var(--text); */
 }
 hr {
     border: 0;
@@ -174,13 +175,9 @@ hr {
 h1 {
     font-family: "Rockwell";
     font-weight: lighter;
-    text-shadow: 0px 0px 20px var(--accent);
     font-size: 50pt;
     transition: all 0.15s;
     color: var(--heading);
-}
-h1:hover {
-    text-shadow: 0px 0px 40px var(--text);
 }
 h2 {
     color: var(--accent);
@@ -302,7 +299,7 @@ h2 {
   .nav-menu a {
     display: block;
     position: relative;
-    color: #fff;
+    color: var(--secondary);
     font-size: 19px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -315,7 +312,7 @@ h2 {
     height: 2px;
     bottom: -4px;
     left: 0;
-    background-color: #139832;
+    background-color: var(--accent);
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
@@ -331,6 +328,6 @@ h2 {
   .nav-menu a:hover,
   .nav-menu .active > a,
   .nav-menu li:hover > a {
-    color: #ffc107;
+    color: var(--special);
     text-decoration: none;
   }  
