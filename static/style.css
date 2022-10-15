@@ -7,6 +7,10 @@ html {
     --secondary: #09384e;
     --fill: #000000;
     --stroke: #747272;
+
+    --background-body: rgb(145, 145, 145);
+    --background-alt: #f7f7f7;
+    --border: #dbdbdb;
 }
 
 /* Old: */
@@ -136,6 +140,11 @@ p {
     font-size: 16pt;
 }
 
+#email {
+    font-size: 3 pt;
+    color: var(--accent);
+}
+
 #credits {
     float: right
 }
@@ -170,7 +179,7 @@ hr {
     height: 1px;
     background: var(--secondary);
     margin: 20px 0;
-    box-shadow: 0px 0px 10px var(--secondary);
+    /* box-shadow: 0px 0px 10px var(--secondary); */
 }
 h1 {
     font-family: "Rockwell";
@@ -180,6 +189,7 @@ h1 {
     color: var(--heading);
 }
 
+/* this is just for contact info */
 h5 {
     font-family: "Rockwell";
     font-weight: lighter;
@@ -187,6 +197,7 @@ h5 {
     transition: all 0.15s;
     color: var(--heading);
     margin-bottom: 0cm;
+    margin-top: 1cm;
 }
 
 h2 {
@@ -199,6 +210,40 @@ h2 {
     margin: 0;
     
 }
+
+/* table stuff */
+table {
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+table caption {
+    text-align: left;
+}
+td,
+
+th {
+  padding: 6px;
+  text-align: left;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+
+thead {
+  border-bottom: 1px solid var(--secondary);
+}
+
+tfoot {
+  border-top: 1px solid var(--secondary);
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+/* end of table stuff */
+  
 
 @media screen and (max-width: 800px) {
     h1 {
@@ -282,10 +327,10 @@ h2 {
 }
 
 /* Footer */
-.footer {
-    color: var(--secondary);
-    background-image: url("../assets/background.png");
-}
+/* .footer {
+    /* color: var(--secondary); */
+    /* background-image: url("../assets/background.png"); 
+} */
 
 /*--------------------------------------------------------------
 # Navigation Menu

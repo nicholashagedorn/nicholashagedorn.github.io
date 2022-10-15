@@ -74,30 +74,6 @@ let app2 = new Vue(
     }
 });
 
-let awards = new Vue({
-    el: '#awards-grid',
-    data: {
-        items: [
-            {
-                name: "Competitive Programming",
-                description: "2nd place at Lockheed Martin\'s CodeQuest. 2nd place at University of Philidelphia\'s Philidelphia Classic",
-            },
-            {
-                name: "Hackathons",
-                description: "1st place at hackPHS 2021. Best in Data Visualization at PantherHack 2021",
-            },
-            {
-                name: "Writing",
-                description: "Finalist of the “Imagination Begins with You…” 12th Annual High School Writing Contest. Published in the 2022 “One Spark” short story collection. Over 350 competitors from 40 states",
-            },
-            {
-                name: "Mathematics",
-                description: "Accepted to present research at the 2023 Joint Mathematics Meetings. Accepted to Program in Algebraic and Combinatorial Thinking.",
-            }
-        ]
-    }
-});
-
 
 let footer = new Vue({
     el: '#footer',
