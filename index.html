@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js" defer async></script>
-        <script src="assets/vendor/lodash.js"></script>
+        <script src="js/three.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-umd-min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Nicholas is a junior at Princeton High School. His primary focus is pure mathematics, where he often spends hours
@@ -17,40 +17,71 @@
         <div id=canvas-container></div>
         <div id="shadow-overlay"></div>
         <div class="container">
+            
             <a name="top"></a>
-            <div class="header">
-                <img src="assets/Logo-black.png" id="heading-image" alt="Nicholas Hagedorn">
-                <div id="introduction">
-                    <h2 style="color:rgb(0, 0, 0)">I'm a <span class="typing" style="color:#0e8d2c"></span></h2>
+            <!-- <div class="header">
+                <div style="width: 80%; float:left">
+                    <img src="assets/Logo-black.png" id="heading-image" alt="Nicholas Hagedorn">
+                    <div id="introduction">
+                        <h2 style="color:rgb(0, 0, 0)">I'm a <span class="typing" style="color:#0e8d2c"></span></h2>
 
-                    <nav class="nav-menu d-none d-lg-block">
-                        <ul>
-                          <li><a href="#experience"> <span>Experience</span></a></li>
-                          <li><a href="#awards"> <span>Awards</span></a></li>
-                          <li><a href="#contact"> <span>Contact</span></a></li>
-                          <li><a href="assets/resume.pdf"> <span>Resume</span></a></li>
-                        </ul>
-                    </nav>
+                        <nav class="nav-menu d-none d-lg-block">
+                            <ul>
+                            <li><a href="#experience"> <span>Experience</span></a></li>
+                            <li><a href="#awards"> <span>Awards</span></a></li>
+                            <li><a href="#contact"> <span>Contact</span></a></li>
+                            <li><a href="assets/resume.pdf"> <span>Resume</span></a></li>
+                            </ul>
+                        </nav>
 
-                    <p>Nicholas is a junior at Princeton High School. His primary focus is pure mathematics, where he often spends hours
-                        trying to solve problems. Sometimes his solutions work.</p>
+                        <p>Nicholas is a junior at Princeton High School. His primary focus is pure mathematics, where he often spends hours
+                            trying to solve problems. Sometimes his solutions work.</p>
+                    </div>
                 </div>
+                <div style="width: 20%; float:right" id="canvas"></div>
+                
+            </div> -->
+
+            <div class="header">
+                <div class="col-1">
+                    <img src="assets/Logo-black.png" id="heading-image" alt="Nicholas Hagedorn">
+                    <div id="introduction">
+                        <h2 style="color:rgb(0, 0, 0)">I'm a <span class="typing" style="color:#0e8d2c"></span></h2>
+
+                        <nav class="nav-menu d-none d-lg-block">
+                            <ul>
+                            <li><a href="#experience"> <span>Experience</span></a></li>
+                            <li><a href="#achievements"> <span>Achievements</span></a></li>
+                            <li><a href="#contact"> <span>Contact</span></a></li>
+                            <li><a href="assets/resume.pdf"> <span>Resume</span></a></li>
+                            </ul>
+                        </nav>
+
+                        <p>Nicholas is a junior at Princeton High School. His primary focus is pure mathematics, where he often spends hours
+                            trying to solve problems. Sometimes his solutions work.</p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div id="canvas"></div>
+                </div>
+                
             </div>
+
             <div class="main-content">
                 <div id="experience">
                     <a name="experience"></a>
                     <div data-aos="fade-right"><h1>Experience</h1></div>
                     <div><panel-list id="experience-grid" v-bind:panels="items"></panel-list></div>
                 </div>
-                <div id="awards">
-                    <a name="awards"></a>
-                    <div data-aos="zoom-out-right"><h1>Awards</h1></div>
+                <div id="achievements">
+                    <a name="achievements"></a>
+                    <div data-aos="zoom-out-right"><h1>Achievements</h1></div>
                     <table>
                         <thead>
                             <tr>
                                 <th width="60">Year</th>
                                 <th>Event</th>
-                                <th>Award</th>
+                                <th>Achievement</th>
                             </tr>                
                         </thead>
                         <tbody id="all-awards">
@@ -73,7 +104,6 @@
                             <li><a href="https://www.linkedin.com/in/nick-hagedorn-66078120a/" target="_blank">LinkedIn</a></li>
                         </ul>
                     </nav>
-                    <p id="email" style="margin-top: 0cm" style="font-size: 15px;">nicholas.d.hagedorn@gmail.com</p>
                 </div>
             </div>
             <br>
@@ -88,7 +118,8 @@
         <script src="static/panels.js"></script>
         <script src="static/patterns.js"></script>
         <script src="static/awards.js"></script>
-        <script src="static/viz.js"></script>
+        <script src="static/knot.js"></script>
+        <!-- <script src="static/viz.js"></script> -->
 
         <script src="assets/vendor/typed.js/typed.min.js"></script>
 

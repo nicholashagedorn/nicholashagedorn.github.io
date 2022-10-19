@@ -13,7 +13,7 @@ let programming = new Vue({
 
 
             {
-                name: "University of Philidelphia\'s Philidelphia Classic",
+                name: "University of Philidelphia\'s Philidelphia Classic (Programming Competition)",
                 description: "Second Place",
                 year: "2022"
             },
@@ -62,8 +62,14 @@ let programming = new Vue({
             },
             
             {
-                name: "Pennsbury Falcon Invitational",
+                name: "Pennsbury Falcon Debate Invitational",
                 description: "First Place",
+                year: "2022"
+            },
+            
+            {
+                name: "California Sate Fullerton Debate Invitational",
+                description: "10th Individual Speaker of 226 Public Forum Debators",
                 year: "2022"
             },
 
