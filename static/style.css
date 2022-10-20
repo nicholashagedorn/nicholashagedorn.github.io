@@ -91,7 +91,7 @@ html, body {
         align-items: center;
         position: relative; 
         display: grid; 
-        grid-template-columns: 70% 30%; 
+        grid-template-columns: 60% 40%; 
     }
     /* put your css style in there */
  }
@@ -100,6 +100,7 @@ html, body {
 .col-1{ 
     /* background-color: #112432;  */
     padding: 10px; 
+    z-index: 2;
   } 
   .col-2{ 
     /* background-color: #4d1635;  */
