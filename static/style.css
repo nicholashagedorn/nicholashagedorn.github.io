@@ -70,14 +70,32 @@ html, body {
 }
 
 /* Heading */
-.header {
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    position: relative; 
-    display: grid; 
-    grid-template-columns: 70% 30%; 
-}
+/* min size style*/
+@media screen and (max-width:999px) {
+    .header {
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        position: relative; 
+        display: grid; 
+        grid-template-columns: 100% 0%; 
+    }
+    /* put your css style in there */
+ }
+ 
+ /* large size style */
+ @media screen and (min-width:1000px) {
+    .header {
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        position: relative; 
+        display: grid; 
+        grid-template-columns: 70% 30%; 
+    }
+    /* put your css style in there */
+ }
+
 
 .col-1{ 
     /* background-color: #112432;  */
@@ -165,7 +183,7 @@ p {
 }
 
 #credits {
-    float: right
+    float: right;
 }
 
 ul.striped-list  li {
@@ -409,6 +427,7 @@ tbody tr:nth-child(even) {
   
   .nav-menu ul {
     display: flex;
+    flex-wrap:wrap;
     margin: 0;
     padding: 0;
     list-style: none;

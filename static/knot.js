@@ -37,7 +37,12 @@ scene.add(lights[2]);
 
 const group = new THREE.Group();
 
-const geometry = new THREE.TorusKnotGeometry(9, 1, 770, 6, 2, 9);
+var horSides = Math.floor(Math.random() * 5) * 3 +2;
+var verSides = Math.floor(Math.random() * 7 + 1) * 100;
+var p = 2 + Math.floor(Math.random() * 1.5);
+var q = Math.floor(Math.random() * 4) * p + 1;
+
+const geometry = new THREE.TorusKnotGeometry(9, 10/(p+q), verSides, horSides, p, q);
 const lineMaterial = new THREE.LineBasicMaterial({
     color: 0xffffff,
     transparent: true,
@@ -59,9 +64,9 @@ const render = function() {
 
     requestAnimationFrame(render);
 
-    group.rotation.x += 0.005 / 1.3;
-    group.rotation.y -= 0.005 / 1.3;
-    group.rotation.z -= 0.002 / 1.3;
+    group.rotation.x += 0.000 / 1.3;
+    group.rotation.y -= 0.003 / 1.3;
+    group.rotation.z -= 0.009 / 1.3;
 
     // const renderer = new THREE.WebGLRenderer({ antialias: true,  alpha: true});
     // // renderer = new THREE.CanvasRenderer();
