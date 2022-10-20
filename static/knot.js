@@ -1,4 +1,6 @@
 const scene = new THREE.Scene();
+const blankScene = new THREE.Scene();
+blankScene.background = new THREE.Color(0xFFFFFF);
 // scene.background = new THREE.Color(0xFFFFFF);
 
 const camera = new THREE.PerspectiveCamera(
@@ -17,7 +19,7 @@ var container = document.getElementById('canvas');
 
 renderer.setPixelRatio(window.devicePixelRatio);
 // renderer.setSize(w, h);
-renderer.setSize(window.innerWidth * 0.3, window.innerHeight * 0.3);
+renderer.setSize(window.innerWidth * 0.3, 1.5 * window.innerHeight * 0.3);
 container.appendChild(renderer.domElement);
 
 const lights = [];
@@ -63,19 +65,25 @@ const render = function() {
 
     // const renderer = new THREE.WebGLRenderer({ antialias: true,  alpha: true});
     // // renderer = new THREE.CanvasRenderer();
-    var container = document.getElementById('canvas');
 
-    renderer.setPixelRatio(window.devicePixelRatio);
-    // renderer.setSize(w, h);
-    renderer.setSize(window.innerWidth * 0.3, window.innerHeight * 0.3);
-    container.appendChild(renderer.domElement);
     if (window.outerWidth > 1000){
     renderer.render(scene, camera);
     }
     else{
-        renderer.clear();
+        renderer.render(blankScene, camera);
     }
 
 };
 
 render();
+
+window.addEventListener( 'resize', onWindowResize, false );
+
+function onWindowResize(){
+
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+
+    renderer.setSize(window.innerWidth * 0.3, 1.5 * window.innerHeight * 0.3);
+
+}
