@@ -14,8 +14,6 @@ camera.position.z = 25;
 const renderer = new THREE.WebGLRenderer({ antialias: true,  alpha: true});
 // renderer = new THREE.CanvasRenderer();
 var container = document.getElementById('canvas');
-var w = container.innerWidth;
-var h = container.innerHeight;
 
 renderer.setPixelRatio(window.devicePixelRatio);
 // renderer.setSize(w, h);
@@ -37,7 +35,7 @@ scene.add(lights[2]);
 
 const group = new THREE.Group();
 
-const geometry = new THREE.TorusKnotGeometry(9, 1, 77, 6, 2, 9);
+const geometry = new THREE.TorusKnotGeometry(9, 1, 770, 6, 2, 9);
 const lineMaterial = new THREE.LineBasicMaterial({
     color: 0xffffff,
     transparent: true,
@@ -56,12 +54,28 @@ group.add(new THREE.Mesh(geometry, meshMaterial));
 scene.add(group);
 
 const render = function() {
+
     requestAnimationFrame(render);
 
-    group.rotation.x += 0.005;
-    group.rotation.y += 0.005;
+    group.rotation.x += 0.005 / 1.3;
+    group.rotation.y -= 0.005 / 1.3;
+    group.rotation.z -= 0.002 / 1.3;
 
+    // const renderer = new THREE.WebGLRenderer({ antialias: true,  alpha: true});
+    // // renderer = new THREE.CanvasRenderer();
+    var container = document.getElementById('canvas');
+
+    renderer.setPixelRatio(window.devicePixelRatio);
+    // renderer.setSize(w, h);
+    renderer.setSize(window.innerWidth * 0.3, window.innerHeight * 0.3);
+    container.appendChild(renderer.domElement);
+    if (window.outerWidth > 1000){
     renderer.render(scene, camera);
+    }
+    else{
+        renderer.clear();
+    }
+
 };
 
 render();
