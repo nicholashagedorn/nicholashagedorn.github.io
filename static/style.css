@@ -69,8 +69,40 @@ html, body {
     z-index: 999;
 }
 
+/* Knot switch */
+#viz-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: var(--background);
+    border: 2px solid var(--secondary);
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s all;
+    opacity: 1;
+}
+#viz-toggle:hover {
+    background-color: var(--background);
+    border: 2px solid var(--accent);
+}
+#viz-toggle img {
+    width: 30px;
+    height: 30px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 800px) {
+    #viz-toggle {
+        display: none;
+    }
+}
+
 /* Heading */
-/* min size style*/
 @media screen and (max-width:999px) {
     .header {
         height: 100%;
@@ -80,10 +112,8 @@ html, body {
         display: grid; 
         grid-template-columns: 100% 0%; 
     }
-    /* put your css style in there */
  }
  
- /* large size style */
  @media screen and (min-width:1000px) {
     .header {
         height: 100%;
@@ -93,7 +123,6 @@ html, body {
         display: grid; 
         grid-template-columns: 60% 40%; 
     }
-    /* put your css style in there */
  }
 
 
@@ -203,12 +232,16 @@ a {
     text-decoration: none;
     /* text-shadow: 0px 0px 10px var(--secondary); */
     
-    cursor: pointer;
+    
     transition: all 0.15s;
     font-family: Poppins;
     font-weight: 200;
 }
-a:hover {
+
+a.link {
+    cursor: pointer;
+}
+.link a:hover {
     color: var(--heading);
     /* text-shadow: 0px 0px 20px var(--text); */
 }

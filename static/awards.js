@@ -34,13 +34,13 @@ let programming = new Vue({
 
             {
                 name: "Joint Mathematics Meetings",
-                description: "Accepted to give talk on original n-crossing knot theory research.",
+                description: "Accepted to give talk on original n-crossing knot theory research",
                 year: "2022"
             },
 
             {
                 name: "Mathematical Association of America's New Jersey Section",
-                description: "Presented research to Undergraduates & Professors. Only High-Schooler Ever Accepted",
+                description: "Gave contributed talk on research to undergraduates & professors. Only high school student accepted",
                 year: "2022"
                 
             },
