@@ -57,7 +57,7 @@ let app2 = new Vue(
                 name: 'PHS Competitive Programming Team',
                 description: "Co-founder. Teaches competitive programming to members and competes in national tournaments. Won 2nd place at Lockheed Martin's CodeQuest competition.",
                 link: 'https://phscpt.github.io/',
-                image: `cpt.jpg`
+                image: `cpt.JPG`
             },
             {
                 name: 'NJ Governor\'s STEM Scholars Program',
