@@ -38,7 +38,7 @@ let app2 = new Vue(
             {
                 name: 'Knot Theory Research',
                 description: "In the study of n-crossing knot diagrams, only inequalities for the 2-, 3-, 4-, and 5- crossing number had been known. Discovered and proved the 5th such inequality. Research advised by Colin Adams of Williams College.",
-                link: `https://www.jointmathematicsmeetings.org/meetings/national/jmm2023/2270_intro`,
+                link: `https://meetings.ams.org/math/jmm2023/meetingapp.cgi/Paper/19435`,
                 image: "njmaa.jpg"
             },
             {
@@ -57,12 +57,13 @@ let app2 = new Vue(
                 name: 'PHS Competitive Programming Team',
                 description: "Co-founder. Teaches competitive programming to members and competes in national tournaments. Won 2nd place at Lockheed Martin's CodeQuest competition.",
                 link: 'https://phscpt.github.io/',
-                image: `cpt.JPG`
+                image: "cpt.JPG"
             },
             {
                 name: 'NJ Governor\'s STEM Scholars Program',
                 description: "Selected as the one of the top 100 STEM students in New Jersey. Currently completing a year-long research project in the program.",
-                link: 'https://govstemscholars.com/'
+                link: 'https://govstemscholars.com/',
+                // image: "govstem.jpg"
             },
             {
                 name: 'Ideas Center',
