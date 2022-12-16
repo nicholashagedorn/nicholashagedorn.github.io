@@ -5,12 +5,13 @@ Vue.component('panel-list', {
     template: `
     <div class="card-grid">
         <div class="card" v-for="panel in panels">
-            <a v-if="panel.link" v-bind:href="panel.link" target="_blank">
-            <div class="card-img" v-if="panel.image" v-bind:style="'background-image:url(img/' + panel.image + ')'"></div>
+            <a v-if="panel.link && panel.image" v-bind:href="panel.link" target="_blank">
+            
             <div class="card-body">
                 <a>{{ panel.name }}</a>
                 <p v-html = "panel.description"></p>
             </div>
+            <div data-aos="fade-up" class="card-img" v-if="panel.image" v-bind:style="'background-image:url(img/' + panel.image + ')'"></div>
             </a>
             <div v-if="!panel.link">
             <div class="card-img" v-if="panel.image" v-bind:style="'background-image:url(img/' + panel.image + ')'"></div>
@@ -59,28 +60,36 @@ let app2 = new Vue(
                 link: 'https://phscpt.github.io/',
                 image: "cpt.JPG"
             },
-            {
-                name: 'NJ Governor\'s STEM Scholars Program',
-                description: "Selected as the one of the top 100 STEM students in New Jersey. Currently completing a year-long research project in the program.",
-                link: 'https://govstemscholars.com/',
-                // image: "govstem.jpg"
-            },
+            // {
+            //     name: 'NJ Governor\'s STEM Scholars Program',
+            //     description: "Selected as the one of the top 100 STEM students in New Jersey. Currently completing a year-long research project in the program.",
+            //     link: 'https://govstemscholars.com/',
+            //     // image: "govstem.jpg"
+            // },
             {
                 name: 'Ideas Center',
                 description: "Leader on the Ideas Center Board and volunteer tutor at Princeton High School tutoring center. March 2022 \“Tutor of the Month.\”",
-                link: 'https://princetonk12.org/princeton-high-school/students/ideas-center'
+                link: 'https://princetonk12.org/princeton-high-school/students/ideas-center',
+                image: "ideascenter-career.jpeg"
             },
             {
                 name: 'π & AI',
                 description: "Co-president of π & AI, which runs weekly math and programming circles at local middle school and library. Earned $600 cash funding from America's Promise Alliance.",
                 link: 'https://princetonlibrary.libnet.info/event/7252938',
-                // image: 'piailogo.jpg'
+                image: 'piailogo2.jpg'
             },
             {
                 name: 'Princeton HR Insight LLC',
                 description: "Head of Marketing for Princeton HR Insight LLC. Create marketing videos viewed by thousands of customers and potential customers.",
-                link: 'https://princetonhrinsight.com/'
-            }
+                link: 'https://princetonhrinsight.com/',
+                image: 'hrinsight.png'
+            },
+            {
+                name: 'hackPHS',
+                description: "Finanical Officer for hackPHS. Organizer in 2022 after winning 1st place in 2021. hackPHS had over 100 contestants all across New Jersey, New York, and Maryland.",
+                link: 'https://hackphs.tech/',
+                image: "hackphs.jpg"
+            },
         ]
     }
 });

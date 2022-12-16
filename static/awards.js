@@ -14,7 +14,7 @@ let programming = new Vue({
 
 
             {
-                name: "University of Philidelphia\'s Philidelphia Classic (Programming Competition)",
+                name: "University of Philidelphia\'s Spring Philidelphia Classic (Programming Competition)",
                 description: "Second Place",
                 year: "2022",
                 grade: "10",
@@ -34,6 +34,21 @@ let programming = new Vue({
                 grade: "9",
             },
 
+
+            {
+                name: "University of Philidelphia\'s Fall Philidelphia Classic (Programming Competition)",
+                description: "Second Place",
+                year: "2022",
+                grade: "11",
+            },
+
+            {
+                name: "Virginia Tech's National High School Programming Competition",
+                description: "Sixth Place",
+                year: "2022",
+                grade: "11",
+            },
+
             // math
 
             {
@@ -45,7 +60,15 @@ let programming = new Vue({
 
             {
                 name: "Mathematical Association of America's New Jersey Section",
-                description: "Gave contributed talk on research to undergraduates & professors. Only high school student accepted",
+                description: "Gave contributed talk on research to undergraduates & professors; only high school student accepted",
+                year: "2022",
+                grade: "11",
+                
+            },
+
+            {
+                name: "American Mathematics Contest 12",
+                description: "Qualified for the American Invitational Mathematics Examination (AIME). Top 5% in the country.",
                 year: "2022",
                 grade: "11",
                 
@@ -83,6 +106,20 @@ let programming = new Vue({
                 grade: "11",
             },
 
+            {
+                name: "Groves Falcon Debate Invitational",
+                description: "Third Place",
+                year: "2022",
+                grade: "11",
+            },
+            
+            {
+                name: "Princeton University's Princeton Classic",
+                description: "9th Place. Earned a Gold Bid to the Tournament of Champions.",
+                year: "2022",
+                grade: "11",
+            },
+
             // programs
 
             {
@@ -113,6 +150,13 @@ let programming = new Vue({
                 description: "Recognized for recieving 5's on every AP exam taken",
                 year: "2022",
                 grade: "10",
+            },
+
+            {
+                name: "November SAT",
+                description: "Scored a 1580; 780 in English and 800 in math; 99.9th percentile",
+                year: "2022",
+                grade: "11",
             },
             
         ]
