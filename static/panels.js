@@ -13,83 +13,73 @@ Vue.component('panel-list', {
             </div>
             <div data-aos="fade-up" class="card-img" v-if="panel.image" v-bind:style="'background-image:url(img/' + panel.image + ')'"></div>
             </a>
-            <div v-if="!panel.link">
-            <div class="card-img" v-if="panel.image" v-bind:style="'background-image:url(img/' + panel.image + ')'"></div>
+            <a v-if="!panel.link">
             <div class="card-body">
                 <a>{{ panel.name }}</a>
                 <p v-html = "panel.description"></p>
             </div>
-            </div>
+            <div data-aos="fade-up" class="card-img" v-if="panel.image" v-bind:style="'background-image:url(img/' + panel.image + ')'"></div>
+            </a>
         </div>
     </div>`
 });
 
 let app2 = new Vue(
 {
-    el: '#experience-grid',
+    el: '#math-grid',
     data:
     {
         items: [
-            {
-                name: 'Absolute Value',
-                description: "Vice President of international 501(c)(3) that hosts middle-school math competitions in over 20 chapters across 5 countries and 12 states. Recognized by Art of Problem Solving as one of the 25 national middle school competitions.",
-                link: 'https://absval.org/',
-                image: "absval.webp"
-            },
-            {
-                name: 'Knot Theory Research',
-                description: "In the study of n-crossing knot diagrams, only inequalities for the 2-, 3-, 4-, and 5- crossing number had been known. Discovered and proved the 5th such inequality. Research advised by Colin Adams of Williams College.",
-                link: `https://meetings.ams.org/math/jmm2023/meetingapp.cgi/Paper/19435`,
-                image: "njmaa.jpg"
-            },
-            {
-                name: 'Princeton Speech & Debate',
-                description: "Officer. Competes on Princeton's Varsity Public Forum debate team. Teaches novices and junior varsity members. 3rd place overall in Varsity Public Forum at New Jersey’s 2022 State Championships and #1 sophomore in NJ.",
-                link: 'http://phsdbteam.com/',
-                image: "njsdl.jpg"
-            },
+
             {
                 name: 'Ross Mathematics Program',
-                description: "Selected as a Junior Counselor at the Ross Mathematics Program, the oldest summer math program for high-schoolers in the US. Self-explored number theory and ramsey theory, graded participant sets, and lead problem review sessions.",
-                link: 'https://rossprogram.org/',
+                description: "I first became interested in mathematical research at the 2022 Ross Program. As a Junior Counselor, I self-explored number theory and took advanced courses in Ergodic Ramsey theory and set theory. When the program ended, I wanted to continue exploring math deeply, and research gave me that opportunity.",
                 image: "rossjc.jpg"
             },
+
             {
-                name: 'PHS Competitive Programming Team',
-                description: "Co-founder. Teaches competitive programming to members and competes in national tournaments. Won 2nd place at Lockheed Martin's CodeQuest competition.",
+                name: 'Knot Theory Research: Multi-crossing knot projection',
+                description: "After reading Colin Adams' The Knot Book, I became interested in researching knot theory. I reached out to Professor Adams, and he introduced me to the study of multi-crossing knot projections. Only inequalities for the 2-, 3-, 4-, and 5- crossing number were previously known. I discovered and proved the 5th such inequality. On the left is my talk at the 2022 MAA NJ Section conference.",
+                image: "njmaa.jpg"
+            },
+
+            {
+                name: 'Knot Theory Research: Games on rational knots',
+                description: "I'm also interested in the intersection between game theory and knot theory. I have been working with Neel Kolhe, Chengze Li, and Eric Tang under the guidance of Professor Allison Henrich and Professor Eric Rawdon to study games on rational knots. On the right is our poster at the 2023 Joint Mathematics Meetings.",
+                image: "jmmposter.jpg"
+            },
+
+            {
+                name: 'Joint Mathematics Meetings',
+                description: "I also gave a contributed talk at the 2023 JMM on my research for multi-crossing knot projections. My paper is available on the arXiv.",
+                image: "njmaa.jpg"
+            },
+            
+        ]
+    }
+});
+
+let prog = new Vue(
+{
+    el: '#prog-grid',
+    data:
+    {
+        items: [
+
+            {
+                name: 'Princeton Competitive Programming Team',
+                description: "I'm also interested in the theory of computation, an intersection between computer science and math. As co-founder of Princeton's Competitive Programming Team, I teach competitive programming to members and compete in national tournaments. Our team placed 2nd place at Lockheed Martin's CodeQuest competition.",
                 link: 'https://phscpt.github.io/',
                 image: "cpt.JPG"
             },
-            // {
-            //     name: 'NJ Governor\'s STEM Scholars Program',
-            //     description: "Selected as the one of the top 100 STEM students in New Jersey. Currently completing a year-long research project in the program.",
-            //     link: 'https://govstemscholars.com/',
-            //     // image: "govstem.jpg"
-            // },
-            {
-                name: 'Ideas Center',
-                description: "Leader on the Ideas Center Board and volunteer tutor at Princeton High School tutoring center. March 2022 \“Tutor of the Month.\”",
-                link: 'https://princetonk12.org/princeton-high-school/students/ideas-center',
-                image: "ideascenter-career.jpeg"
-            },
-            {
-                name: 'π & AI',
-                description: "Co-president of π & AI, which runs weekly math and programming circles at local middle school and library. Earned $600 cash funding from America's Promise Alliance.",
-                link: 'https://princetonlibrary.libnet.info/event/7252938',
-                image: 'piailogo2.jpg'
-            },
-            {
-                name: 'Princeton HR Insight LLC',
-                description: "Head of Marketing for Princeton HR Insight LLC. Create marketing videos viewed by thousands of customers and potential customers.",
-                link: 'https://princetonhrinsight.com/',
-                image: 'hrinsight.png'
-            },
+
             {
                 name: 'hackPHS',
-                description: "Finanical Officer for hackPHS. Organizer in 2022 after winning 1st place in 2021. hackPHS had over 100 contestants all across New Jersey, New York, and Maryland.",
+                description: "I've also explored computer science through hackathons. After winning hackPHS in 2021, I became a finanical officer for hackPHS. In 2022, hackPHS had over 100 contestants from all across New Jersey, New York, and Maryland.",
                 link: 'https://hackphs.tech/',
                 image: "hackphs.jpg"
             },
+            
         ]
     }
 });
