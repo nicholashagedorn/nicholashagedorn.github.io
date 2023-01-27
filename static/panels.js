@@ -38,21 +38,21 @@ let app2 = new Vue(
             },
 
             {
-                name: 'Knot Theory Research: Multi-crossing knot projection',
+                name: 'Knot Theory Research: Multi-crossing knot projections',
                 description: "After reading Colin Adams' The Knot Book, I became interested in researching knot theory. I reached out to Professor Adams, and he introduced me to the study of multi-crossing knot projections. Only inequalities for the 2-, 3-, 4-, and 5- crossing number were previously known. I discovered and proved the 5th such inequality. On the left is my talk at the 2022 MAA NJ Section conference.",
                 image: "njmaa.jpg"
             },
 
             {
                 name: 'Knot Theory Research: Games on rational knots',
-                description: "I'm also interested in the intersection between game theory and knot theory. I have been working with Neel Kolhe, Chengze Li, and Eric Tang under the guidance of Professor Allison Henrich and Professor Eric Rawdon to study games on rational knots. On the right is our poster at the 2023 Joint Mathematics Meetings.",
+                description: "In addition, I'm interested in the intersection between game theory and knot theory. I have been working with Neel Kolhe, Chengze Li, and Eric Tang under the guidance of Professor Allison Henrich and Professor Eric Rawdon to study games on rational knots. On the right is our poster at the 2023 Joint Mathematics Meetings.",
                 image: "jmmposter.jpg"
             },
 
             {
                 name: 'Joint Mathematics Meetings',
                 description: "I also gave a contributed talk at the 2023 JMM on my research for multi-crossing knot projections. My paper is available on the arXiv.",
-                image: "njmaa.jpg"
+                image: "jmmtalk.jpeg"
             },
             
         ]
@@ -68,14 +68,14 @@ let prog = new Vue(
 
             {
                 name: 'Princeton Competitive Programming Team',
-                description: "I'm also interested in the theory of computation, an intersection between computer science and math. As co-founder of Princeton's Competitive Programming Team, I teach competitive programming to members and compete in national tournaments. Our team placed 2nd place at Lockheed Martin's CodeQuest competition.",
+                description: "I'm interested in the theory of computation, an intersection between computer science and math. As co-founder of Princeton's Competitive Programming Team, I teach competitive programming to members and compete in national tournaments. Our team placed 2nd place at Lockheed Martin's CodeQuest competition.",
                 link: 'https://phscpt.github.io/',
                 image: "cpt.JPG"
             },
 
             {
                 name: 'hackPHS',
-                description: "I've also explored computer science through hackathons. After winning hackPHS in 2021, I became a finanical officer for hackPHS. In 2022, hackPHS had over 100 contestants from all across New Jersey, New York, and Maryland.",
+                description: "I've also explored computer science through hackathons. After winning hackPHS in 2021, I became a financial officer for hackPHS. In 2022, hackPHS had over 100 contestants from all across New Jersey, New York, and Maryland.",
                 link: 'https://hackphs.tech/',
                 image: "hackphs.jpg"
             },

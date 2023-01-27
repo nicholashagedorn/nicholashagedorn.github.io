@@ -263,14 +263,13 @@ hr {
     /* box-shadow: 0px 0px 10px var(--secondary); */
 }
 h1 {
-    font-family: "Inter Semi Bold";
+    font-family: "Inter Semi Bold", monospace;
+    /* font-family: "Space Mono", monospace; */
     font-weight: lighter;
     font-size: 40pt;
     transition: all 0.15s;
     color: var(--heading);
 }
-
-
 
 .side .title {
     font-family: "Inter Extra Bold";
@@ -302,6 +301,10 @@ h1 {
     /* position: absolute; */
     top: 40vh;
 
+}
+
+#cs {
+    /* background-color: #000000; */
 }
 
 
