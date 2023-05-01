@@ -33,26 +33,38 @@ let app2 = new Vue(
 
             {
                 name: 'Ross Mathematics Program',
-                description: "I first became interested in mathematical research at the 2022 Ross Program. As a Junior Counselor, I self-explored number theory and took advanced courses in Ergodic Ramsey theory and set theory. When the program ended, I wanted to continue exploring math deeply, and research gave me that opportunity.",
+                description: "I first became interested in math research at the 2022 Ross Program. As a Junior Counselor, I self-explored number theory and took advanced courses in Ergodic Ramsey theory and set theory. When the program ended, I wanted to continue exploring math deeply, and research gave me that opportunity.",
                 image: "rossjc.jpg"
             },
 
             {
-                name: 'Knot Theory Research: Multi-crossing knot projections',
-                description: "After reading Colin Adams' The Knot Book, I became interested in researching knot theory. I reached out to Professor Adams, and he introduced me to the study of multi-crossing knot projections. Only inequalities for the 2-, 3-, 4-, and 5- crossing number were previously known. I discovered and proved the 5th such inequality. On the left is my talk at the 2022 MAA NJ Section conference.",
+                name: 'Knot Theory Research',
+                description: "After reading Colin Adams' The Knot Book, I became interested in researching knot theory. I reached out to Professor Adams, and he introduced me to the study of multi-crossing knot projections. Only inequalities for the 3-, 4-, and 5- crossing number were previously known. I discovered and proved the 4th such inequality. On the left is my talk at the 2022 MAA NJ Section conference.",
                 image: "njmaa.jpg"
             },
 
             {
                 name: 'Knot Theory Research: Games on rational knots',
                 description: "In addition, I'm interested in the intersection between game theory and knot theory. I have been working with Neel Kolhe, Chengze Li, and Eric Tang under the guidance of Professor Allison Henrich and Professor Eric Rawdon to study games on rational knots. On the right is our poster at the 2023 Joint Mathematics Meetings.",
-                image: "jmmposter.jpg"
+                image: "jmmposter.jpg",
             },
 
             {
                 name: 'Joint Mathematics Meetings',
-                description: "I also gave a contributed talk at the 2023 JMM on my research for multi-crossing knot projections. My paper is available on the arXiv.",
+                description: "I also gave a contributed talk at the 2023 JMM on my research for multi-crossing knot projections. My paper \"Strict inequalities for the n-crossing number\" has been published in the Journal of Knot Theory and Its Ramifications.",
                 image: "jmmtalk.jpeg"
+            },
+
+            {
+                name: 'MIT PRIMES-USA',
+                description: "Currently, I'm researching the geometry of 2-manifolds in the PRIMES program. I began by studying hyperbolic geometry in the reading phase; I have now transitioned to the active research phase.",
+                image: "mit_edit.png"
+            },
+
+            {
+                name: 'International Science and Engineering Fair',
+                description: "After competing in the Mercer Science and Engineering Fair, I became an ISEF finalist. I will present my multi-crossing knot projection research at Intel's 2023 ISEF in Dallas, Texas.",
+                image: "isef.png"
             },
             
         ]
@@ -68,7 +80,7 @@ let prog = new Vue(
 
             {
                 name: 'Princeton Competitive Programming Team',
-                description: "I'm interested in the theory of computation, an intersection between computer science and math. As co-founder of Princeton's Competitive Programming Team, I teach competitive programming to members and compete in national tournaments. Our team placed 2nd place at Lockheed Martin's CodeQuest competition.",
+                description: "I'm interested in the theory of computation, an intersection between computer science and math. As co-founder of Princeton's Competitive Programming Team, I teach competitive programming to members and compete in national tournaments. Our team placed 1st at Lockheed Martin's CodeQuest competition.",
                 link: 'https://phscpt.github.io/',
                 image: "cpt.JPG"
             },
