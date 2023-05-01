@@ -38,13 +38,13 @@ let app2 = new Vue(
             },
 
             {
-                name: 'Knot Theory Research',
+                name: 'Knot Theory Research: Multi-crossing Knot Projections',
                 description: "After reading Colin Adams' The Knot Book, I became interested in researching knot theory. I reached out to Professor Adams, and he introduced me to the study of multi-crossing knot projections. Only inequalities for the 3-, 4-, and 5- crossing number were previously known. I discovered and proved the 4th such inequality. On the left is my talk at the 2022 MAA NJ Section conference.",
                 image: "njmaa.jpg"
             },
 
             {
-                name: 'Knot Theory Research: Games on rational knots',
+                name: 'Knot Theory Research: Games on Rational Knots',
                 description: "In addition, I'm interested in the intersection between game theory and knot theory. I have been working with Neel Kolhe, Chengze Li, and Eric Tang under the guidance of Professor Allison Henrich and Professor Eric Rawdon to study games on rational knots. On the right is our poster at the 2023 Joint Mathematics Meetings.",
                 image: "jmmposter.jpg",
             },
