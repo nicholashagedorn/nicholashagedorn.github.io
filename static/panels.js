@@ -58,13 +58,13 @@ let app2 = new Vue(
             {
                 name: 'MIT PRIMES-USA',
                 description: "Currently, I'm researching the geometry of 2-manifolds in the PRIMES program. I began by studying hyperbolic geometry in the reading phase; I have now transitioned to the active research phase.",
-                image: "mit_edit.png"
+                image: "MIT-PRIMES-logo-new.png"
             },
 
             {
                 name: 'International Science and Engineering Fair',
-                description: "After competing in the Mercer Science and Engineering Fair, I became an ISEF finalist. I will present my multi-crossing knot projection research at Intel's 2023 ISEF in Dallas, Texas.",
-                image: "isef.png"
+                description: "After competing in the Mercer Science and Engineering Fair, I became an ISEF finalist. I presented my multi-crossing knot projection research at the 2023 Regeneron ISEF in Dallas, Texas. I won the 2nd place Grand Prize in mathematics.",
+                image: "isef_grand.png"
             },
             
         ]
@@ -81,14 +81,12 @@ let prog = new Vue(
             {
                 name: 'Princeton Competitive Programming Team',
                 description: "I'm interested in the theory of computation, an intersection between computer science and math. As co-founder of Princeton's Competitive Programming Team, I teach competitive programming to members and compete in national tournaments. Our team placed 1st at Lockheed Martin's CodeQuest competition.",
-                link: 'https://phscpt.github.io/',
-                image: "cpt.JPG"
+                image: "code-quest.jpg"
             },
 
             {
                 name: 'hackPHS',
                 description: "I've also explored computer science through hackathons. After winning hackPHS in 2021, I became a financial officer for hackPHS. In 2022, hackPHS had over 100 contestants from all across New Jersey, New York, and Maryland.",
-                link: 'https://hackphs.tech/',
                 image: "hackphs.jpg"
             },
             
