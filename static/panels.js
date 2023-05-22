@@ -64,7 +64,7 @@ let app2 = new Vue(
             {
                 name: 'International Science and Engineering Fair',
                 description: "After competing in the Mercer Science and Engineering Fair, I became an ISEF finalist. I presented my multi-crossing knot projection research at the 2023 Regeneron ISEF in Dallas, Texas. I won the 2nd place Grand Prize in mathematics.",
-                image: "isef_grand.png"
+                image: "isef_grand2.png"
             },
             
         ]
