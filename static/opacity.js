@@ -35,7 +35,7 @@ function changeSlide(){
         $(this).css("grid-template-columns", String(100-value) + "% " + String(value) + "%");
     });
     $(".card:odd").children().each(function(){
-        value = 55 + 15*Math.random();
+        value = 65 + 10*Math.random();
         $(this).css("grid-template-columns", String(value) + "% " + String(100-value) + "%");
     });
     

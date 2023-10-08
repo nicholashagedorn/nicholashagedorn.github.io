@@ -64,10 +64,10 @@ function createKnot() {
     const lineMaterial = new THREE.LineBasicMaterial({
         color: 0xffffff,
         transparent: true,
-        opacity: 0.5
+        opacity: 0
     });
     const meshMaterial = new THREE.MeshPhongMaterial({
-        color: 0x6b6b6b,
+        color: 0x09384e,
         emissive: 0x072534,
         side: THREE.DoubleSide,
         flatShading: true
@@ -106,9 +106,9 @@ function createKnot() {
 
     };
 
-    camera.aspect = window.innerWidth / (2 * window.innerHeight) ;
+    camera.aspect = window.innerWidth / (2 * window.innerHeight) * 2;
     camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth * 0.4, 2 * window.innerHeight * 0.4);
+    renderer.setSize(window.innerWidth * 0.5, 2 * window.innerHeight * 0.25);
     render();
 
 
@@ -122,9 +122,9 @@ window.addEventListener( 'resize', onWindowResize, false );
 
 function onWindowResize(){
 
-    camera.aspect = window.innerWidth / (2 * window.innerHeight) ;
+    camera.aspect = window.innerWidth / (2 * window.innerHeight) * 2 ;
     camera.updateProjectionMatrix();
 
-    renderer.setSize(window.innerWidth * 0.4, 2 * window.innerHeight * 0.4);
+    renderer.setSize(window.innerWidth * 0.5, 2 * window.innerHeight * 0.25);
 
 }

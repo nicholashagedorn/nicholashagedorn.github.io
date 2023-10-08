@@ -2,7 +2,7 @@ html {
     --background: #ffffff;
     --heading: #000000;
     --text: #363636;
-    --accent: #0e8d2c;
+    --accent: #105b7e;
     --special: #ffc107;
     --secondary: #09384e;
     --title: #105b7e;
@@ -240,12 +240,14 @@ ul.striped-list > li:last-child {
 a {
     color: var(--accent);
     text-decoration: none;
+    font-weight: 200;
+
     /* text-shadow: 0px 0px 10px var(--secondary); */
     
     
     transition: all 0.15s;
     font-family: Poppins;
-    font-weight: 200;
+    /* font-weight: 200; */
 }
 
 a.link {
@@ -288,10 +290,10 @@ h1 {
     z-index: 2;
 }
 
-#right-side {
+/* #right-side { */
     /* width: 100%; */
     /* margin-left: -100%; */
-}
+/* } */
 
 #left-side .title{
     color: var(--title);
@@ -443,7 +445,7 @@ tbody tr:nth-child(even) {
 
 .card-img{
     width:calc(100%);
-    min-height:100px;
+    min-height:600px;
     /* border-radius: 5px 0px 0px 5px; */
     background-size:cover;
     background-position:center;
@@ -452,6 +454,7 @@ tbody tr:nth-child(even) {
     top:0px;
     position:relative;
     transform: all 0.5s;
+    /* border: 5px solid #555; */
 }
 
 .card-body{
@@ -461,7 +464,6 @@ tbody tr:nth-child(even) {
     align-content: center;
     flex-direction: column;
     min-height: 400px;
-    
 }
 
 .card-body p{

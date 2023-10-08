@@ -11,14 +11,14 @@ Vue.component('panel-list', {
                 <a>{{ panel.name }}</a>
                 <p v-html = "panel.description"></p>
             </div>
-            <div data-aos="fade-up" class="card-img" v-if="panel.image" v-bind:style="'background-image:url(img/' + panel.image + ')'"></div>
+            <div class="card-img" v-if="panel.image" v-bind:style="'background-image:url(img/' + panel.image + ')'"></div>
             </a>
             <a v-if="!panel.link">
             <div class="card-body">
                 <a>{{ panel.name }}</a>
                 <p v-html = "panel.description"></p>
             </div>
-            <div data-aos="fade-up" class="card-img" v-if="panel.image" v-bind:style="'background-image:url(img/' + panel.image + ')'"></div>
+            <div class="card-img" v-if="panel.image" v-bind:style="'background-image:url(img/' + panel.image + ')'"></div>
             </a>
         </div>
     </div>`
@@ -38,15 +38,9 @@ let app2 = new Vue(
             },
 
             {
-                name: 'Knot Theory Research: Multi-crossing Knot Projections',
+                name: 'Knot Theory Research',
                 description: "After reading Colin Adams' The Knot Book, I became interested in researching knot theory. I reached out to Professor Adams, and he introduced me to the study of multi-crossing knot projections. Only inequalities for the 3-, 4-, and 5- crossing number were previously known. I discovered and proved the 4th such inequality. On the left is my talk at the 2022 MAA NJ Section conference.",
                 image: "njmaa.jpg"
-            },
-
-            {
-                name: 'Knot Theory Research: Games on Rational Knots',
-                description: "In addition, I'm interested in the intersection between game theory and knot theory. I have been working with Neel Kolhe, Chengze Li, and Eric Tang under the guidance of Professor Allison Henrich and Professor Eric Rawdon to study games on rational knots. On the right is our poster at the 2023 Joint Mathematics Meetings.",
-                image: "jmmposter.jpg",
             },
 
             {
@@ -63,7 +57,7 @@ let app2 = new Vue(
 
             {
                 name: 'International Science and Engineering Fair',
-                description: "After competing in the Mercer Science and Engineering Fair, I became an ISEF finalist. I presented my multi-crossing knot projection research at the 2023 Regeneron ISEF in Dallas, Texas. I won the 2nd place Grand Prize in mathematics.",
+                description: "After competing in the Mercer Science and Engineering Fair, I became an ISEF finalist. I presented my multi-crossing knot projection research at the 2023 Regeneron ISEF in Dallas, Texas. I won the 2nd Place Grand Prize in Mathematics.",
                 image: "isef_grand2.png"
             },
             
